@@ -67,7 +67,7 @@ export default defineComponent({
     const dataSource = computed(() => domainList.value.map(item => {
       return {
         ...item,
-        domainBaseTypeName: item.domainBaseType?.name,
+        domainBaseTypeName: item.domainBaseTypeId,
         key: item.id
       }
     }))

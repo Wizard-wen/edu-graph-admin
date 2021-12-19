@@ -7,7 +7,7 @@ import {
   PublicApiResponseType,
   RequestUtil
 } from "@/api.service/api.config";
-import { DomainBaseTypeModelType } from "../../../edu-graph-constant";
+import { DomainBaseTypeModelType } from "metagraph-constant";
 
 
 export class DomainBaseTypeApiService {
