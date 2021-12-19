@@ -5,7 +5,7 @@
 <script lang="ts">
 import type { PullRequestModelType } from "metagraph-constant";
 import { defineComponent, onMounted, ref } from 'vue';
-import { PullRequestApiService } from "../api.service";
+import { PullRequestApiService } from "../../api.service";
 
 export default defineComponent({
   name: "pull.request.list",

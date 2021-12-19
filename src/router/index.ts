@@ -10,7 +10,7 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: '/pr/list',
         name: 'PullRequestList',
-        component: () => import(/* webpackChunkName: "about" */ '../views/pull.request.list.vue')
+        component: () => import(/* webpackChunkName: "about" */ '../views/pull.request/pull-request-list.vue')
       },
       {
         path: '/user/list',
@@ -20,12 +20,17 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: '/domainBaseType/list',
         name: 'DomainBaseTypeList',
-        component: () => import('../views/domain-base-type-list.vue')
+        component: () => import('../views/domain/domain-base-type-list.vue')
       },
       {
         path: '/domain/list',
         name: 'DomainList',
-        component: () => import('../views/domain-list.vue')
+        component: () => import('../views/domain/domain-list.vue')
+      },
+      {
+        path: '/tag/list',
+        name: 'TagList',
+        component: () => import('../views/tag/tag-list.vue')
       },
     ]
   },

@@ -7,3 +7,4 @@ export { PullRequestApiService } from './pull.request.api.service';
 export { UserApiService } from './user.api.service';
 export { DomainBaseTypeApiService } from './domain.base.type.api.service';
 export { DomainApiService } from './domain.api.service';
+export { TagApiTest } from './tag.api.test';

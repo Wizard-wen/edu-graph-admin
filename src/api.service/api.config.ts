@@ -19,7 +19,10 @@ export enum ApiPathEnum {
   GetDomainBaseTypeList = '/admin/domainBaseType/getList',
   GetDomainBaseTypeTotalList = '/admin/domainBaseType/getTotalList',
   ChangeDomainBaseTypeChangeStatus = '/admin/domainBaseType/changeStatus',
-  CreateDomainBaseType = '/admin/domainBaseType/create'
+  CreateDomainBaseType = '/admin/domainBaseType/create',
+  // tag
+  CreateTag = '/admin/tag/create',
+  GetTagList = '/admin/tag/getList'
 }
 
 export interface PublicApiResponseType<T> {

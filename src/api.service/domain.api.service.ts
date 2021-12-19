@@ -1,13 +1,14 @@
+/**
+ * @author songxiwen
+ * @date  2021/8/30 16:41
+ */
+
 import {
   ApiPathEnum,
   PublicApiResponseType,
   RequestUtil
 } from "@/api.service/api.config";
 
-/**
- * @author songxiwen
- * @date  2021/8/30 16:41
- */
 
 export class DomainApiService {
   static async create(params: { domainBaseTypeId: string; name: string; description?: string; }): Promise<PublicApiResponseType<any>> {

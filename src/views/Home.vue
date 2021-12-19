@@ -6,9 +6,14 @@
       <router-link to="/domainBaseType/list">Domain base type list</router-link>
       <br/>
       <router-link to="/user/list">User list</router-link>
+      <br/>
+      <router-link to="/tag/list">Tag List</router-link>
     </div>
-    <div class="content">
-      <router-view/>
+    <div class="right-content">
+      <div class="header"></div>
+      <div class="content">
+        <router-view/>
+      </div>
     </div>
   </div>
 </template>
@@ -22,21 +27,31 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .home {
+  overflow: hidden;
   display: flex;
+  height: 100vh;
+  width: 100vw;
 
   .side {
-    width: 280px;
+    width: 220px;
     height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
     border-right: 1px solid #ccc;
   }
 
-  .content {
+  .right-content {
     flex: 1;
-    min-height: 100vh;
-    overflow: scroll;
+    height: 100vh;
+    width: calc(100% - 280px);
+    .header {
+      height: 55px;
+      width: 100%;
+      background: #f5f5f5;
+      border-bottom: 1px solid #cccccc;
+    }
+    .content{
+      padding: 20px;
+      overflow-y: auto;
+    }
   }
 }
 </style>
